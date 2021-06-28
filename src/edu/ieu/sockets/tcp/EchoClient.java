@@ -57,8 +57,8 @@ public class EchoClient {
 	    	while(true){
 	    		System.out.print("Escriba un mensaje al servidor: ");   		
 				String mensaje = inTeclado.readLine();
-				System.out.println("Mensaje para el servidor " + mensaje);
 				
+				System.out.println("Mensaje para el servidor " + mensaje);
 				String respuesta = echoClient.sendMessage(mensaje);
 				System.out.println("Respuesta : " + respuesta);
 				if(respuesta.equals("good bye")) {
